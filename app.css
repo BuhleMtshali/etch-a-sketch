@@ -33,4 +33,13 @@ body {
 }
 button {
   margin-bottom: 15px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px solid #2a9d8f;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background-color: #2a9d8f;
+  color: white;
 }
