@@ -13,8 +13,8 @@ const colors = [
   "rgb(255, 255, 0)", // Yellow
 ];
 
-colorElement.addEventListener("mouseover", () => {
-  squaresElement.forEach((square) => {
+squaresElement.forEach((square) => {
+  square.addEventListener("mouseover", () => {
     const randomIndex = Math.floor(Math.random() * colors.length);
     square.style.backgroundColor = colors[randomIndex];
   });
