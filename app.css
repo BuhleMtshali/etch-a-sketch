@@ -4,38 +4,32 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  /* align-items: center; */
-  /* min-height: 100vh; */
+  align-items: center;
+  min-height: 100vh;
 }
 .color-container {
-  /*width: 210px;
-  height: 210px;
-  border: 3px solid #264653;
-  margin: 0 auto;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;*/
   display: grid;
   grid-template-columns: repeat(
     auto-fill,
     minmax(100px, 1fr)
   ); /* Creates responsive columns */
-  grid-gap: 5px; /* Adjust the space between the squares */
+  grid-gap: 1px; /* Adjust the space between the squares */
   padding: 10px; /* Optional padding inside the container */
-  max-width: 80%; /* Make sure it fits the screen width */
   box-sizing: border-box;
-  width: 500px;
+  max-width: 500px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: 2px solid #2a9d8f;
+  background-color: #2a9d8f;
 }
 .square {
-  /*width: 50px;
-  height: 40px;
-  border: 2px solid #e7c6ff;
-  flex-wrap: wrap;*/
   background-color: #ddd; /* Default background color */
   width: 100%; /* Fill the available space in the grid cell */
-  padding-bottom: 100%; /* Make it a perfect square */
+  padding-bottom: 100%; /*Make it a perfect square */
   box-sizing: border-box;
+  border: 2px solid #2a9d8f;
+  cursor: pointer;
 }
 button {
   margin-bottom: 15px;
