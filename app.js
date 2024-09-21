@@ -1,4 +1,5 @@
 let colorElement = document.getElementById("color-container");
+let deleteBtn = document.getElementById("delete");
 let squaresElement = document.querySelectorAll(".square");
 const colors = [
   "rgb(255, 99, 71)", // Tomato
@@ -17,5 +18,11 @@ squaresElement.forEach((square) => {
   square.addEventListener("mouseover", () => {
     const randomIndex = Math.floor(Math.random() * colors.length);
     square.style.backgroundColor = colors[randomIndex];
+  });
+});
+
+deleteBtn.addEventListener("click", () => {
+  squaresElement.forEach((square) => {
+    square.style.backgroundColor = "white";
   });
 });
